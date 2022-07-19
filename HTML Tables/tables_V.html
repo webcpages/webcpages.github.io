@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tables</title>
+        <style>
+            table{
+                border:3px solid black;
+                border-collapse: collapse;/*it collapses the border to a thin line*/
+                /*border-collapse: unset;*/
+                width: 100%;
+                
+            }
+            tr,td,th{
+                border:3px solid black;
+                text-align: left;
+                padding:4px;
+                
+                }
+                /*sets the color for even rows*/
+            tr:nth-child(even){
+                background-color: rgb(134, 161, 88);
+            }
+            /*sets the color for odd rows*/
+            tr:nth-child(odd){
+                background-color: bisque;
+            }
+            th{
+                background-color:cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Place</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>john</td>
+                <td>28</td>
+                <td>new jersy</td>
+            </tr>
+            <tr>
+                <td>karl</td>
+                <td>26</td>
+                <td>texas</td>
+            </tr>
+            <tr>
+                <td>max</td>
+                <td>22</td>
+                <td>new york</td>
+            </tr>
+            <tr>
+                <td>jack</td>
+                <td>24</td>
+                <td>DC</td>
+            </tr>
+            <tr>
+                <td>alex</td>
+                <td>25</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>francis</td>
+                <td>26</td>
+                <td>paris</td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
